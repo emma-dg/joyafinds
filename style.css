@@ -54,6 +54,7 @@ body {
     letter-spacing: 15%;
     align-items: center;
     justify-content: center;
+    background-color: white;
 }
 
 .navContainer {
@@ -63,6 +64,7 @@ body {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     height: 26px;
+    background-color: white;
 }
 
 
@@ -238,4 +240,21 @@ footer * {
     margin: auto;
     padding: 10px;
     color:#333;
+}
+
+.items {
+    display: flex;
+    justify-content: center;  /* Centers the items horizontally */
+    align-items: center;      /* Centers the items vertically */
+    flex-wrap: wrap;          /* Allows items to wrap to the next line if needed */
+    gap: 5px;                /* Optional: Adds space between the product divs */
+    height: 100vh;            /* Ensures the items container takes up full height of the viewport */
+}
+
+.product {
+    width: 500px;  /* Set the width to 200px */
+    height: 300px; /* Optional: set the height to make it visible */
+    background-color: rgb(255, 255, 255); /* Optional: just for visibility */
+    border-width: 1px;
+    border-color: black;
 }
