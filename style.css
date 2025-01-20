@@ -1,0 +1,241 @@
+* {
+    border-width: 0px;
+    border-style: solid;
+    border-color: red;
+}
+
+/* Ensure the entire page takes up the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: #EAEAEA;
+  }
+  
+  /* This makes the content area flexible, pushing the footer down */
+  .bodyContent {
+    flex-grow: 1;
+  }
+  
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    /* The footer will now always be at the bottom of the page */
+    position: relative;
+    bottom: 0;
+    border-top: 1px solid black;
+  }
+
+body {
+    margin: 0px;
+    font-family: OPTIUniversSixtySeven;
+    
+}
+
+@font-face {
+    font-family: OPTIUniversSixtySeven;
+    src: url("OPTIUniversSixtySeven.otf") format("opentype");
+}
+
+.greyBar {
+    background-color: #D9D9D9;
+    height: 29px;
+}
+
+.titleBar {
+    display: flex;
+    font-family: OPTIUniversSixtySeven;
+    font-size: 24;
+    letter-spacing: 15%;
+    align-items: center;
+    justify-content: center;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 26px;
+}
+
+
+.navContainer a:hover {
+    background-color: black;
+    color: white;
+}
+
+.navOptions {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: OPTIUniversSixtySeven;
+    font-size: 12px;
+    
+}
+
+.navOptions li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.navOptions a {
+    text-decoration: none; /* Remove the underline */
+    color: black; /* Change text color to black or any color you prefer */
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+
+}
+
+.brands img {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 126px;
+    margin-bottom: 126px;
+
+}
+
+.brands .gallery {
+    height: 39px;
+}
+
+.brands .balenci {
+    width: 152px;
+}
+
+.brands .yzy {
+    height: 24px;
+}
+
+.brands .bape {
+    height: 38px;
+}
+
+.brands .vet {
+    height: 24px;
+}
+
+.brands .chrome {
+    height: 64px;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContent > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 76px;
+
+}
+
+.mainLogo {
+    letter-spacing: 15%;
+    font-size: 64px;
+    margin: auto;
+    margin-bottom: 76px;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column
+}
+
+.buttons a {
+
+}
+
+.buttons a:hover {
+    color: black;
+    background-color: white;
+    box-shadow:inset 0px 0px 0px 1px rgb(0, 0, 0);
+    
+}
+
+.optionBlocks1 {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 14px;
+    margin: 0; /* Remove any margin around the list */
+    padding: 0; /* Remove any padding */
+
+}
+
+.optionBlocks1 > * {
+    display: flex;
+
+}
+
+.optionBlocks1 a {
+    text-decoration: none; /* Remove the underline */
+    margin: 10px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    
+}
+
+.optionBlocks2 {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 14px;
+    margin: 0; /* Remove any margin around the list */
+    padding: 0; /* Remove any padding */
+
+}
+
+.optionBlocks2 > * {
+    display: flex;
+
+}
+
+.optionBlocks2 a {
+    text-decoration: none; /* Remove the underline */
+    margin: 10px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    
+}
+
+p {
+    text-align: center;
+}
+
+footer {
+    background-color: #ffffff;
+    margin: 0px;
+    color:#333;
+    border-top: 1px solid black;
+}
+
+footer * {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin: auto;
+    padding: 10px;
+    color:#333;
+}
