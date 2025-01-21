@@ -245,16 +245,44 @@ footer * {
 .items {
     display: flex;
     justify-content: center;  /* Centers the items horizontally */
-    align-items: center;      /* Centers the items vertically */
+      /* Centers the items vertically */
     flex-wrap: wrap;          /* Allows items to wrap to the next line if needed */
-    gap: 5px;                /* Optional: Adds space between the product divs */
+    gap: 0px;                /* Optional: Adds space between the product divs */
     height: 100vh;            /* Ensures the items container takes up full height of the viewport */
 }
 
 .product {
-    width: 500px;  /* Set the width to 200px */
-    height: 300px; /* Optional: set the height to make it visible */
+    display: flex;
+    justify-content: center;
+    width: 555px;  /* Set the width to 200px */
+    height: 391px; /* Optional: set the height to make it visible */
     background-color: rgb(255, 255, 255); /* Optional: just for visibility */
     border-width: 1px;
+}
+
+/* First product div: left and bottom border */
+.product:nth-child(1) {
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 0px;
+    border-color: black;
+}
+
+/* Middle product div: left, bottom, and right border */
+.product:nth-child(2) {
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 0px;
+    border-color: black;
+}
+
+/* Last product div: bottom and left border */
+.product:nth-child(3) {
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-top-width: 0px;
     border-color: black;
 }
