@@ -252,13 +252,34 @@ footer * {
 }
 
 .product {
-    display: flex;
-    justify-content: center;
-    width: 555px;  /* Set the width to 200px */
-    height: 391px; /* Optional: set the height to make it visible */
+    position: relative;        /* Establish a positioning context for children */
+    width: 555px;
+    height: 391px;
     background-color: rgb(255, 255, 255); /* Optional: just for visibility */
-    border-width: 1px;
-}
+    border: 1px solid black;   /* Optional: makes the border visible */
+    overflow: hidden;          /* Prevent content from overflowing */
+  }
+  
+  .product img {
+    position: absolute;        /* Fix the image placement */
+    top: 20px;                 /* Position the image */
+    left: 50%;                 /* Center horizontally */
+    transform: translateX(-50%); /* Ensure horizontal centering */
+    height: 350px;             /* Keep the image size fixed */
+  }
+  
+  .product p {
+    position: absolute;        /* Position the text independently */
+    bottom: 40px;              /* Place it 10px from the bottom of the container */
+    left: 54px;                /* Place it 10px from the left of the container */
+    margin: 0;                 /* Reset margins for consistency */
+    padding: 0;                /* Reset padding for consistency */
+    font-size: 16px;           /* Optional: adjust font size */
+    color: black;              /* Optional: set text color */
+    text-align: left;
+  }
+  
+  
 
 /* First product div: left and bottom border */
 .product:nth-child(1) {
