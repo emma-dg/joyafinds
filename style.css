@@ -277,9 +277,65 @@ footer * {
     font-size: 16px;           /* Optional: adjust font size */
     color: black;              /* Optional: set text color */
     text-align: left;
+}
+  
+.product .price {
+    position: absolute;        /* Position the text independently */
+    bottom: 40px;              /* Place it 10px from the bottom of the container */
+    right: 54px;                /* Place it 10px from the left of the container */
+    margin: 0;                 /* Reset margins for consistency */
+    padding: 0;                /* Reset padding for consistency */
+    font-size: 16px;           /* Optional: adjust font size */
+    color: black;              /* Optional: set text color */
+    text-align: right;
+    font-size: 24px;
+
+}
+
+
+
+
+
+.product-tshirts {
+    position: relative;        /* Establish a positioning context for children */
+    width: 555px;
+    height: 391px;
+    background-color: rgb(255, 255, 255); /* Optional: just for visibility */
+    border: 1px solid black;   /* Optional: makes the border visible */
+    overflow: hidden;          /* Prevent content from overflowing */
   }
   
+  .product-tshirts img {
+    position: absolute;        /* Fix the image placement */
+    top: 10px;                 /* Position the image */
+    left: 50%;                 /* Center horizontally */
+    transform: translateX(-50%); /* Ensure horizontal centering */
+    height: 280px;             /* Keep the image size fixed */
+  }
   
+  .product-tshirts p {
+    position: absolute;        /* Position the text independently */
+    bottom: 40px;              /* Place it 10px from the bottom of the container */
+    left: 54px;                /* Place it 10px from the left of the container */
+    margin: 0;                 /* Reset margins for consistency */
+    padding: 0;                /* Reset padding for consistency */
+    font-size: 16px;           /* Optional: adjust font size */
+    color: black;              /* Optional: set text color */
+    text-align: left;
+}
+  
+.product-tshirts .price {
+    position: absolute;        /* Position the text independently */
+    bottom: 40px;              /* Place it 10px from the bottom of the container */
+    right: 54px;                /* Place it 10px from the left of the container */
+    margin: 0;                 /* Reset margins for consistency */
+    padding: 0;                /* Reset padding for consistency */
+    font-size: 16px;           /* Optional: adjust font size */
+    color: black;              /* Optional: set text color */
+    text-align: right;
+    font-size: 24px;
+
+}  
 
 /* First product div: left and bottom border */
 .product:nth-child(1) {
@@ -306,4 +362,37 @@ footer * {
     border-left-width: 0px;
     border-top-width: 0px;
     border-color: black;
+}
+
+
+/* First product div: left and bottom border */
+.product-tshirts:nth-child(1) {
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 0px;
+    border-color: black;
+}
+
+/* Middle product div: left, bottom, and right border */
+.product-tshirts:nth-child(2) {
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 0px;
+    border-color: black;
+}
+
+/* Last product div: bottom and left border */
+.product-tshirts:nth-child(3) {
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-color: black;
+}
+
+
+.product-tshirts, .product-tshirts * {
+    margin: 0;
 }
