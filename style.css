@@ -68,10 +68,23 @@ body {
 }
 
 
-.navContainer a:hover {
-    background-color: black;
-    color: white;
-}
+.navContainer a {
+    background-color: transparent; /* Default background */
+    color: black;                  /* Default text color */
+    text-decoration: none;         /* Remove underline */
+    padding: 10px 15px;            /* Optional: add padding for better spacing */
+    transition: all 0.3s ease;     /* Smooth transition for hover */
+  }
+  
+  .navContainer a:hover {
+    background-color: black;       /* Hover background */
+    color: white;                  /* Hover text color */
+  }
+  
+  .navContainer a.active {
+    background-color: black;       /* Active background (same as hover) */
+    color: white;                  /* Active text color */
+  }
 
 .navOptions {
     display: flex;
