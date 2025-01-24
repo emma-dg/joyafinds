@@ -44,12 +44,13 @@ body {
 
 
 .UpperBar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    z-index: 9999; /* Keeps the navbar above the rest of the content */
-  }
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: rgb(0, 0, 0);
+  z-index: 9999; /* Keeps the navbar above the rest of the content */
+}
 
 
 .greyBar {
@@ -279,7 +280,7 @@ footer * {
     width: 555px;
     height: 391px;
     background-color: rgb(255, 255, 255); /* Optional: just for visibility */
-    border: 1px solid black;   /* Optional: makes the border visible */
+    border: 1px solid rgb(209, 209, 209);
     overflow: hidden;          /* Prevent content from overflowing */
   }
   
@@ -324,7 +325,7 @@ footer * {
     width: 555px;
     height: 391px;
     background-color: rgb(255, 255, 255); /* Optional: just for visibility */
-    border: 1px solid black;   /* Optional: makes the border visible */
+    border: 1px solid rgb(209, 209, 209);
     overflow: hidden;          /* Prevent content from overflowing */
   }
   
@@ -360,60 +361,7 @@ footer * {
 
 }  
 
-/* First product div: left and bottom border */
-.product:nth-child(1) {
-    border-right-width: 0px;
-    border-bottom-width: 1px;
-    border-left-width: 1px;
-    border-top-width: 0px;
-    border-color: black;
-}
 
-/* Middle product div: left, bottom, and right border */
-.product:nth-child(2) {
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 1px;
-    border-top-width: 0px;
-    border-color: black;
-}
-
-/* Last product div: bottom and left border */
-.product:nth-child(3) {
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 0px;
-    border-top-width: 0px;
-    border-color: black;
-}
-
-
-/* First product div: left and bottom border */
-.product-tshirts:nth-child(1) {
-    border-right-width: 0px;
-    border-bottom-width: 1px;
-    border-left-width: 1px;
-    border-top-width: 0px;
-    border-color: black;
-}
-
-/* Middle product div: left, bottom, and right border */
-.product-tshirts:nth-child(2) {
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 1px;
-    border-top-width: 0px;
-    border-color: black;
-}
-
-/* Last product div: bottom and left border */
-.product-tshirts:nth-child(3) {
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 0px;
-    border-top-width: 0px;
-    border-color: black;
-}
 
 
 .product-tshirts, .product-tshirts * {
