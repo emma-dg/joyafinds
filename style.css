@@ -12,12 +12,14 @@ html, body {
     flex-direction: column;
     overflow-x: hidden;
     background-color: #EAEAEA;
-  }
+}
   
   /* This makes the content area flexible, pushing the footer down */
   .bodyContent {
     flex-grow: 1;
-  }
+    display: flex;
+    flex-direction: column;
+}
   
 footer {
     background-color: #333;
@@ -25,11 +27,11 @@ footer {
     text-align: center;
     padding: 20px;
     width: 100%;
-    /* The footer will now always be at the bottom of the page */
-    position: relative;
-    bottom: 0;
+    margin-top: auto; /* Ensures it stays at the bottom */
     border-top: 1px solid black;
-  }
+    position: relative; /* Prevents it from being overlapped */
+    z-index: 10; /* Ensures it appears above other elements */
+}
 
 body {
     margin: 0px;
@@ -186,9 +188,7 @@ body {
     flex-direction: column
 }
 
-.buttons a {
 
-}
 
 .buttons a:hover {
     color: black;
@@ -268,11 +268,10 @@ footer * {
 
 .items {
     display: flex;
-    justify-content: center;  /* Centers the items horizontally */
-      /* Centers the items vertically */
-    flex-wrap: wrap;          /* Allows items to wrap to the next line if needed */
-    gap: 0px;                /* Optional: Adds space between the product divs */
-    height: 100vh;            /* Ensures the items container takes up full height of the viewport */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0px;
+    min-height: auto; /* Prevents it from forcing a full page height */
 }
 
 .product {
@@ -366,4 +365,49 @@ footer * {
 
 .product-tshirts, .product-tshirts * {
     margin: 0;
+}
+
+
+.pageButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+.leftButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 5px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px;
+    background-color: white;
+}
+
+.rightButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 5px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px;
+    background-color: white;
+}
+
+.affiliateLink * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-size: 16px;
 }
